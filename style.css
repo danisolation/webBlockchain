@@ -1,9 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
+    margin:0;
     padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Mulish', 'Lato', sans-serif;
+}
+body{
+    background: hsla(197, 100%, 63%, 1);
+
+background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+
+.horizon-pointer:hover{cursor: pointer; transition-property: color; color:#00bcd4}
+
+#check:checked ~ .horizon-sidebar{
+    width:60px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#check:checked ~ .horizon-sidebar p{
+    display: contents;
+}
+
+#check:checked ~ .horizon-sidebar li span{
+    display: none;
+}
+#check:checked ~ .horizon-sidebar li a{
+    display: none;
+}
+#check:checked ~ .horizon-opacity{
+    opacity: none;
+}
+#check:checked ~ .horizon-flexible-content{
+    margin-left: 200px;
 }
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/*html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}*/
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
@@ -57,7 +99,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-dropdown-hover:hover > .horizon-button:first-child,.horizon-dropdown-click:hover > .horizon-button:first-child{background-color:#ccc;color:#000}
 .horizon-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .horizon-check,.horizon-radio{width:24px;height:24px;position:relative;top:6px}
-.horizon-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.horizon-sidebar{height:100%;width:200px;background-color:rgba(255, 255, 255, 0.616);position: fixed!important;z-index:1;overflow:auto;transition: 0.5s;backdrop-filter: blur(5px);}
 .horizon-bar-block .horizon-dropdown-hover,.horizon-bar-block .horizon-dropdown-click{width:100%}
 .horizon-bar-block .horizon-dropdown-hover .horizon-dropdown-content,.horizon-bar-block .horizon-dropdown-click .horizon-dropdown-content{min-width:100%}
 .horizon-bar-block .horizon-dropdown-hover .horizon-button,.horizon-bar-block .horizon-dropdown-click .horizon-button{width:100%;text-align:left;padding:8px 16px}
@@ -84,7 +126,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-col.l5{width:41.66666%}.horizon-col.l6{width:49.99999%}.horizon-col.l7{width:58.33333%}.horizon-col.l8{width:66.66666%}
 .horizon-col.l9{width:74.99999%}.horizon-col.l10{width:83.33333%}.horizon-col.l11{width:91.66666%}.horizon-col.l12{width:99.99999%}}
 .horizon-rest{overflow:hidden}.horizon-stretch{margin-left:-16px;margin-right:-16px}
-.horizon-content,.horizon-auto{margin-left:auto;margin-right:auto}.horizon-content{max-width:980px}.horizon-auto{max-width:1140px}
+.horizon-content,.horizon-auto{margin-left:auto;margin-right:auto}.horizon-content{max-width:1000px}.horizon-auto{max-width:1140px}.horizon-flexible-content{margin-left: 280px; padding: 10px 10px 10px 10px; background: rgba(255,255,255,0.4); backdrop-filter: blur(5px); transition: 0.5s;}
 .horizon-cell-row{display:table;width:100%}.horizon-cell{display:table-cell}
 .horizon-cell-top{vertical-align:top}.horizon-cell-middle{vertical-align:middle}.horizon-cell-bottom{vertical-align:bottom}
 .horizon-hide{display:none!important}.horizon-show-block,.horizon-show{display:block!important}.horizon-show-inline-block{display:inline-block!important}

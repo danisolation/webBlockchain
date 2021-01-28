@@ -1,4 +1,5 @@
 # webBlockchain
 
-font-family:
+font-family: Mulish, Lato
+
 palette:
