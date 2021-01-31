@@ -11,11 +11,8 @@
     <title>Blockchain.io</title>
 </head>
 <body>
-    <header class="horizon-top horizon-left" style="width: 20%;">
-        <div class="horizon-bar-item horizon-button horizon-padding-large horizon-text-white" id="toggle" href="javascript:void(0)">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-        <nav class="horizon-opacity horizon-white horizon-hide" id="navigation"> <!--horizon-hide horizon-hide-large horizon-hide-medium ! -->
+    <header class="horizon-top" style="width: 20%;">
+        <nav class="" id="navigation"> 
             <ul>
                 <li><a class="horizon-bar-item horizon-button horizon-padding-large" href="http://">Section1</a></li>
                 <li><a class="horizon-bar-item horizon-button horizon-padding-large" href="http://">Section2</a></li>
@@ -25,7 +22,7 @@
         </nav>
     </header>
     
-    <!-- <div class="horizon-content">
+    <div class="horizon-content">
 
         <section class="main-section horizon-display-container horizon">
             <img src="/source.gif" style="width: 100%;">
@@ -45,26 +42,10 @@
             
         </section>
 
-    </div> -->
+    </div>
     
     <footer>
         
     </footer>
-    <script>
-        function onClicked(){
-            console.log('clicked');         
-            var target = document.getElementById("navigation");
-            if (target.className.indexOf(" horizon-hide") == -1) {
-                target.className += " horizon-hide";
-
-            } else {         
-                target.className = target.className.replace( /(?:^|\s)horizon-hide(?!\S)/g , '' ); 
-            }
-        }
-
-        window.onload = function(){
-            document.getElementById("toggle").addEventListener('click', onClicked);
-        }
-    </script>
 </body>
 </html>
