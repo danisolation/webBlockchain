@@ -41,7 +41,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", en
     opacity: none;
 }
 #check:checked ~ .horizon-flexible-content{
-    margin-left: 200px;
+    margin-left: 180px;
 }
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
@@ -95,11 +95,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
 .horizon-dropdown-click,.horizon-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
 .horizon-dropdown-hover:hover .horizon-dropdown-content{display:block}
-.horizon-dropdown-hover:first-child,.horizon-dropdown-click:hover{background-color:#ccc;color:#000}
+.horizon-dropdown-hover:first-child,.horizon-dropdown-click:hover{background-color:#00FFCC;font-size:110%;font-weight:bold;width:90%;color:white;} 
 .horizon-dropdown-hover:hover > .horizon-button:first-child,.horizon-dropdown-click:hover > .horizon-button:first-child{background-color:#ccc;color:#000}
 .horizon-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .horizon-check,.horizon-radio{width:24px;height:24px;position:relative;top:6px}
-.horizon-sidebar{height:100%;width:200px;background-color:rgba(255, 255, 255, 0.616);position: fixed!important;z-index:1;overflow:auto;transition: 0.5s;backdrop-filter: blur(5px);}
+.horizon-sidebar{height:100%;width:240px;background-color:rgba(255, 255, 255, 0.616);position: fixed!important;z-index:1;overflow:auto;transition: 0.5s;backdrop-filter: blur(5px);}
 .horizon-bar-block .horizon-dropdown-hover,.horizon-bar-block .horizon-dropdown-click{width:100%}
 .horizon-bar-block .horizon-dropdown-hover .horizon-dropdown-content,.horizon-bar-block .horizon-dropdown-click .horizon-dropdown-content{min-width:100%}
 .horizon-bar-block .horizon-dropdown-hover .horizon-button,.horizon-bar-block .horizon-dropdown-click .horizon-button{width:100%;text-align:left;padding:8px 16px}
@@ -111,7 +111,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-bar .horizon-dropdown-hover,.horizon-bar .horizon-dropdown-click{position:static;float:left}
 .horizon-bar .horizon-button{white-space:normal}
 .horizon-bar-block .horizon-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
-.horizon-bar-block.horizon-center .horizon-bar-item{text-align:center}.horizon-block{display:block;width:100%}
+.horizon-bar-block.horizon-center .horizon-bar-item{text-align:center}.horizon-block{display:block;width:100%;border-radius: 25px;margin-left: auto; margin-right: auto;}
 .horizon-responsive{display:block;overflow-x:auto}
 .horizon-container:after,.horizon-container:before,.horizon-panel:after,.horizon-panel:before,.horizon-row:after,.horizon-row:before,.horizon-row-padding:after,.horizon-row-padding:before,
 .horizon-cell-row:before,.horizon-cell-row:after,.horizon-clear:after,.horizon-clear:before,.horizon-bar:before,.horizon-bar:after{content:"";display:table;clear:both}
@@ -126,7 +126,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-col.l5{width:41.66666%}.horizon-col.l6{width:49.99999%}.horizon-col.l7{width:58.33333%}.horizon-col.l8{width:66.66666%}
 .horizon-col.l9{width:74.99999%}.horizon-col.l10{width:83.33333%}.horizon-col.l11{width:91.66666%}.horizon-col.l12{width:99.99999%}}
 .horizon-rest{overflow:hidden}.horizon-stretch{margin-left:-16px;margin-right:-16px}
-.horizon-content,.horizon-auto{margin-left:auto;margin-right:auto}.horizon-content{max-width:1000px}.horizon-auto{max-width:1140px}.horizon-flexible-content{margin-left: 280px; padding: 10px 10px 10px 10px; background: rgba(255,255,255,0.4); backdrop-filter: blur(5px); transition: 0.5s;}
+.horizon-content,.horizon-auto{margin-left:auto;margin-right:auto}.horizon-content{max-width:1000px}.horizon-auto{max-width:1140px}.horizon-flexible-content{margin-left: 280px; padding: 10px 30px 10px 30px; background: rgba(255,255,255,0.4); backdrop-filter: blur(5px); transition: 0.5s;border-radius: 25px;}
 .horizon-cell-row{display:table;width:100%}.horizon-cell{display:table-cell}
 .horizon-cell-top{vertical-align:top}.horizon-cell-middle{vertical-align:middle}.horizon-cell-bottom{vertical-align:bottom}
 .horizon-hide{display:none!important}.horizon-show-block,.horizon-show{display:block!important}.horizon-show-inline-block{display:inline-block!important}
