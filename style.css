@@ -7,17 +7,19 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Mulish', 'Lato', sans-serif;
+    
 }
 body{
-    background: hsla(197, 100%, 63%, 1);
+    background: hsla(339, 100%, 55%, 1);
 
-background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
 
-background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
 
-background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1 );
+    
 }
 
 .horizon-pointer:hover{cursor: pointer; transition-property: color; color:#00bcd4}
@@ -42,6 +44,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", en
 }
 #check:checked ~ .horizon-flexible-content{
     margin-left: 180px;
+}
+
+.horizon-set-margin-top{
+    margin-top:0!important;
 }
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
