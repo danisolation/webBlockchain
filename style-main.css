@@ -107,7 +107,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-btn,.horizon-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .horizon-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .horizon-btn,.horizon-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
-.horizon-disabled,.horizon-btn:disabled,.horizon-button:disabled{cursor:not-allowed;opacity:0.3}.horizon-disabled *,:disabled *{pointer-events:none}
+.horizon-disabled,.horizon-btn:disabled,.horizon-button:disable{cursor:not-allowed;opacity:0.3}.horizon-disabled *,:disabled *{pointer-events:none}
 .horizon-btn.horizon-disabled:hover,.horizon-btn:disabled:hover{box-shadow:none}
 .horizon-badge,.horizon-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.horizon-badge{border-radius:50%}
 .horizon-ul{list-style-type:none;padding:0;margin:0}.horizon-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.horizon-ul li:last-child{border-bottom:none}
@@ -115,15 +115,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-ripple:active{opacity:0.5}.horizon-ripple{transition:opacity 0s}
 .horizon-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
 .horizon-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
-.horizon-dropdown-click,.horizon-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
-.horizon-dropdown-hover:hover .horizon-dropdown-content{display:block} 
-.horizon-dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;}
-
-
-
+.horizon-dropdown-click,.horizon-dropdown-hover{position:relative;display:inline-block}
+.horizon-dropdown-hover:hover .horizon-dropdown-content{display:block}
 .horizon-dropdown-click:hover{background-color:#ccc;color:#000}
-.horizon-dropdown-hover:hover > .horizon-button:first-child,.horizon-dropdown-click:hover > .horizon-button:first-child{background-color:#ccc;color:#000}
+.horizon-dropdown-click:hover > .horizon-button:first-child{background-color:#ccc;color:#000}
 .horizon-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.horizon-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.horizon-dropdown-hover:hover .horizon-button {
+  background-color:rgba(255,255,255,0.4);
+}
+.horizon-dropdown-content a:hover{background-color:#f1f1f1;}
 .horizon-check,.horizon-radio{width:24px;height:24px;position:relative;top:6px}
 .horizon-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
 .horizon-bar-block .horizon-dropdown-hover,.horizon-bar-block .horizon-dropdown-click{width:100%}
@@ -159,8 +165,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (max-width:1205px){.horizon-auto{max-width:95%}}
 @media (max-width:600px){.horizon-modal-content{margin:0 10px;width:auto!important}.horizon-modal{padding-top:30px}
 .horizon-dropdown-hover.horizon-mobile .horizon-dropdown-content,.horizon-dropdown-click.horizon-mobile .horizon-dropdown-content{position:relative}	
-
-
 .horizon-hide-small{display:none!important}.horizon-mobile{display:block;width:100%!important}.horizon-bar-item.horizon-mobile,.horizon-dropdown-hover.horizon-mobile,.horizon-dropdown-click.horizon-mobile{text-align:center}
 .horizon-dropdown-hover.horizon-mobile,.horizon-dropdown-hover.horizon-mobile .horizon-btn,.horizon-dropdown-hover.horizon-mobile .horizon-button,.horizon-dropdown-click.horizon-mobile,.horizon-dropdown-click.horizon-mobile .horizon-btn,.horizon-dropdown-click.horizon-mobile .horizon-button{width:100%}}
 @media (max-width:768px){.horizon-modal-content{width:500px}.horizon-modal{padding-top:50px}}
